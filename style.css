@@ -1,0 +1,234 @@
+.price-plan-page{
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F8FA;
+}
+.price-plan-page .container{
+    max-width: 90%;
+}
+.price-plan-page header{
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+}
+.price-plan-page header .head{
+    font-weight: 700;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 10px 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+.price-plan-page header .circle{
+    background: #F46AD6;
+    color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(340deg)
+}
+.price-plan-page header .circle p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.price-plan-page header .circle .middle{
+    font-size: 24px;   
+}
+/* mini price */
+.mini-price-single{
+    text-align: center;
+    padding: 20px 0;
+}
+.mini-price-single .head{
+    font-weight: 700;
+    color: #F46AD6;
+}
+.mini-price-single p{
+    font-size: 24px;
+}
+.mini-price-single .title{
+    font-weight: 300;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.mini-price-single .price{
+    font-family: 'Gelasio', serif;
+}
+.mini-price-single .price-btn{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(76, 73, 228, 0.81);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+}
+.mini-price-single .detail{
+    margin: 15px 0 0 0;
+    cursor: pointer;
+    font-family: 'Gelasio', serif;
+}
+.info-bar {
+    padding: 20px 0;
+}
+.info-bar p{
+    margin: 0 20px 10px 0;
+    color: #4C49E4;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.todo-section{
+    padding: 30px 0;
+}
+.todo-section .head{
+    color: #636161;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+.todo-section .title{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.todo-section .todo-inner-head{
+    font-size: 22px;
+    color: #4C49E4;
+    font-family: 'Gelasio', serif;
+}
+.todo-section .todo-inner-title{
+    font-weight: 300;
+    max-width: 500px;
+}
+
+
+.price-ahora{
+    text-align: center;
+    padding: 200px 0;
+    background: #E9F6FF;
+    font-family: 'Roboto', sans-serif;
+}
+.price-ahora .head{
+    font-weight: 600;
+    font-size: 30px;
+    color: #0052FF;
+    margin-bottom: 50px;
+}
+.price-ahora .title{
+    font-size: 18px;
+    color: #050F19;
+}
+
+
+
+
+
+
+
+.main-price{
+    text-align: center;
+    padding: 10px;
+    flex-basis: 20%;
+}
+.main-price .top{
+    background-color: #F6F8FA;
+    padding: 20px 0;
+}
+.main-price .head{
+    font-weight: 700;
+    color: #F46AD6;
+}
+.main-price p{
+    font-size: 22px;
+}
+.main-price .title{
+    font-weight: 300;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.main-price .price{
+    font-family: 'Gelasio', serif;
+}
+.main-price .price-btn{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(76, 73, 228, 0.81);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.main-price-des{
+    padding: 10px;
+    flex-basis: 20%;
+}
+.main-price-des .head{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    color: #4C49E4;
+}
+.main-price-des .title{
+    font-weight: 300;
+    font-size: 18px;
+    color: #262325;
+}
+
+
+
+.main-price-point{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 22px;
+    color: #000;
+}
+.single-point:first-child{
+    text-align: left;
+}
+.single-point{
+    flex-basis: 20%;
+}
+
+.single-point .fa-check{
+    color: #5a6072;
+}
+.single-point .fa-times{
+    color: #5a607277;
+}
+
+
+@media only screen and (max-width:850px) {
+    .main-price-des .title {
+        font-size: 16px;
+    }
+    .main-price-des .head {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .price-plan-page header .head {
+        font-size: 40px;
+    }
+    .price-plan-page header .circle .middle {
+        font-size: 18px;
+    }
+    .price-plan-page header .circle p {
+        font-size: 16px;
+    }
+    .price-plan-page header .circle {
+        height: 100px;
+        width: 100px;
+    }
+    .price-plan-page header {
+        min-height: 200px;
+    }
+}
