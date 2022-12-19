@@ -26,6 +26,33 @@
         <div class="price-plan-page">
 
 
+            <div class="latest-payement-popup-wraper">
+                <div class="latest-payment-popup">
+                    <h1>Desbloquea Todas Las Funciones Y Comienza A Usarlas En Menos De 60 Segundos</h1>
+                    <div class="pop">
+                        <i class="fas fa-times"></i>
+                        <div class="radio">
+                            <div class="single-option">
+                                <p class="title">Pequeñas empresas - Mensual</p>
+                                <p class="per">$20 <span>Ahorra 70%</span></p>
+                                <p class="des">Prueba de 7 días gratis, libre de riesgo</p>
+                                <p class="des">Cancela cuando quieras</p>
+                            </div>
+                        </div>
+                        <form action="">
+                            <label class="head" for="">Ingresa tu tarjeta de crédito o débito</label>
+                            <input type="text">
+                            <input type="submit" class="submit-btn" value="Empezar mi prueba gratis">
+                        </form>
+                        <div class="c-right">
+                            Actualizandote a la versión superior, aceptas 
+                            <a href="#">Política de privacidad</a> y <a href="#">Términos y condiciones.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
             <header>
                 <p class="head">Planes y precios</p>
@@ -49,29 +76,29 @@
                             <p class="head">Principiante</p>
                             <p class="title">Ideal para probar</p>
                             <p class="price">9,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
-                            <p class="detail">Detalles </p>
+                            <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
+                            <a class="detail" href="#price-section">Detalles</a>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
                             <p class="head">Principiante</p>
                             <p class="title">Ideal para probar</p>
                             <p class="price">9,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
-                            <p class="detail">Detalles </p>
+                            <button onclick="popShow()"  class="price-btn btn">Empezar prueba gratis</button>
+                            <a class="detail" href="#price-section">Detalles</a>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
                             <p class="head">Principiante</p>
                             <p class="title">Ideal para probar</p>
                             <p class="price">9,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
-                            <p class="detail">Detalles </p>
+                            <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
+                            <a class="detail" href="#price-section">Detalles</a>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
                             <p class="head">Principiante</p>
                             <p class="title">Ideal para probar</p>
                             <p class="price">9,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
-                            <p class="detail">Detalles </p>
+                            <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
+                            <a class="detail" href="#price-section">Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +175,7 @@
             </div>
 
 
-            <div class="container-fluid py-4" style="background: #fff;">
+            <div class="container-fluid py-4" style="background: #fff;" id="price-section">
                 <div class="row">
 
                     <div class="main-price-des">
@@ -162,7 +189,7 @@
                             <p class="head">Principiante</p>
                             <p class="title">Ideal para probar</p>
                             <p class="price">9,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
+                            <button class="price-btn btn" onclick="popShow()">Empezar prueba gratis</button>
                         </div>
                     </div>
 
@@ -171,7 +198,7 @@
                             <p class="head">Aprendices</p>
                             <p class="title">Empieza tu carrera</p>
                             <p class="price">18,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
+                            <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
                         </div>
                     </div>
 
@@ -180,7 +207,7 @@
                             <p class="head">Escritores</p>
                             <p class="title">Estrellas en ascenso</p>
                             <p class="price">29,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
+                            <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
                         </div>
                     </div>
 
@@ -189,7 +216,7 @@
                             <p class="head">Consagrados</p>
                             <p class="title">Ganar el Planeta</p>
                             <p class="price">39,99€/mes</p>
-                            <button class="price-btn btn">Empezar prueba gratis</button>
+                            <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
                         </div>
                     </div>
 
@@ -462,10 +489,33 @@
 
 
 
+        <script>
+            const popShow = ()=>{
+                document.querySelector('.latest-payement-popup-wraper').style.cssText = "display:block";
+                document.querySelector('.latest-payement-popup-wraper i').addEventListener('click',()=>{
+                    document.querySelector('.latest-payement-popup-wraper').style.cssText = "display:none";
+                })
+            }
+        </script>
+
 
 
 
 
 
     </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
