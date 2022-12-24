@@ -101,16 +101,19 @@ html{
 .todo-section .title{
     text-align: center;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .todo-section .todo-inner-head{
     font-size: 22px;
     color: #4C49E4;
     font-family: 'Gelasio', serif;
+    text-align: center;
 }
 .todo-section .todo-inner-title{
     font-weight: 300;
     max-width: 500px;
+    text-align: center;
+    margin: auto;
 }
 
 
